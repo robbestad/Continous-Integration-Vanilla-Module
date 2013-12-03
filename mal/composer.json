@@ -1,0 +1,18 @@
+{
+"name": "svenanders/continous-integrating-and-testing",
+"description": "Continous Integration & Testing",
+"license": "",
+    "require": {
+    "php": ">=5.3.3",
+        "soldotno/sol_codestandards": "dev-master"
+    },
+    "require-dev": {
+        "phing/phing": "dev-master",
+        "phpmd/phpmd" : "1.4.*",
+        "phpunit/phpunit" : "3.7.*",
+        "squizlabs/php_codesniffer" : "1.*",
+        "pdepend/pdepend" : "1.1.0",
+        "fabpot/php-cs-fixer": "dev-master",
+        "sebastian/diff": "1.1.0"
+    }
+}
