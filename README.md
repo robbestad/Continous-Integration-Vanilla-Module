@@ -4,6 +4,7 @@
 * sass
 * cslint
 * jshint
+* composer
 
 #Kodestandard
 ###Det beste ved standarder, er at du har så mange å velge blant...
