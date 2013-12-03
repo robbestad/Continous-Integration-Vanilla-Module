@@ -1,3 +1,10 @@
+#Prerequisites
+
+* phing
+* sass
+* cslint
+* jshint
+
 #Kodestandard
 ###Det beste ved standarder, er at du har så mange å velge blant...
 
