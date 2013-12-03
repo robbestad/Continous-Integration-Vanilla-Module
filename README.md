@@ -16,7 +16,7 @@ Kodesnifferen vi har valgt til dette formålet er PHP CodeSniffer. Det er tilgje
 Vi har valgt en standard som ligger nær opp til Zend-standarden. Det er en god ide å ta utgangspunkt i en eksisterende standard, for det gjør det enklere når man får nye øyne inn i kodebasen, samtidig som det gir en viss trygghet at valgene som er gjort er forankret i den vide verden.
 
 ######Javascript######
-For Javascript-validering har vi tatt i bruk JSHint (http://www.jshint.com/). Det kan installeres via node (_npm install -g jshint_) og eksekveres ved å skrive 'jshint js/' (som i dette eksempelet validerer alle filer i javascript-katalogen).
+For validering av Javascript har vi tatt i bruk JSHint (http://www.jshint.com/). Det kan installeres via node (_npm install -g jshint_) og kjøres ved å skrive 'jshint js/' (som i dette eksempelet validerer alle filer i javascript-katalogen).
 
 ######CSS######
 For CSS-validering har vi tatt i bruk CSS Lint. Det installeres også via node (npm install -g csslint), og brukes på samme måte som JSHint.
