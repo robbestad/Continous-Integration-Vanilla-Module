@@ -1,15 +1,23 @@
+# VanillaEnterpriseModule
+
+This repo is trying to take the best practises that the development community has and the standards we in Scandinavia Online are using to create a vanilla module that could be used as the basic for any php module. 
+
+To see the best alot of good practises for php development, We recommand http://phptherightway.com/
+
 #Prerequisites
 
 * phing
-* sass
-* cslint
-* jshint
 * composer
+* php
+
+We could say that the only thing you need to install is composer and php, 
+and then we could download all the dependencies via composer. But to keep the repository to a minimum, 
+we also expect that the system has installed phing. 
 
 #Kodestandard
 ###Det beste ved standarder, er at du har så mange å velge blant...
 
-Mellomrom, indentering og klammeposisjon betyr egentlig ingenting, men når det får programmerere til å miste arbeidsflyt, kan det bety veldig mye. 
+Mellomrom, indentering og klammeposisjon betyr ingenting for datamaskinene , men når det får programmerere til å miste arbeidsflyt, kan det bety veldig mye. 
 
 Det å ha en kodestandard innebærer at alle som jobber med vår kode vet hvordan koden skal struktureres. Det gjør den leselig for alle, og det øker arbeidsflyten.
 
