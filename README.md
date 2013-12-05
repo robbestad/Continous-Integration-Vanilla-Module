@@ -1,5 +1,7 @@
 # VanillaEnterpriseModule
 
+[link](#getstarted)
+
 This repo is trying to take the best practises that the development community has and the standards we in Scandinavia Online are using to create a vanilla module that could be used as the basic for any php module. 
 
 To see the best alot of good practises for php development, We recommand http://phptherightway.com/
@@ -51,7 +53,7 @@ Phing kan dras ned via Composer ("phing/phing","dev-master").
 
 Det konfigureres med en build.xml-fil, som gjør det enkelt å konfiguere opp testscenarioer og hvordan feil skal behandles. 
 
-#Get Started
+#<a name="getstarted"></a>Get Started
 Rename the folder called _./mal_ to your module name
 
 Delete the .git folder and re-initalize with your new git repo
