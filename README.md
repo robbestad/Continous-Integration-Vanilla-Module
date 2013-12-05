@@ -1,4 +1,4 @@
-# VanillaEnterpriseModule
+# Vanilla Enterprise Module
 
 * [Get Started](#getstarted)
 * [Javascript](#javascript)
