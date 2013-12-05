@@ -51,12 +51,16 @@ Phing kan dras ned via Composer ("phing/phing","dev-master").
 
 Det konfigureres med en build.xml-fil, som gjør det enkelt å konfiguere opp testscenarioer og hvordan feil skal behandles. 
 
-#Kom i gang
-Gå inn i katalogen _./mal_ og kjør:
-    
+#Get Started
+Rename the folder called _./mal_ to your module name
+
+Delete the .git folder and re-initalize with your new git repo
+
+Then enter your module folder and execute
+
     composer.phar install
     
-Bygg systemet via følgende kommando:
+Build the system with the following command
 
     phing build
     
