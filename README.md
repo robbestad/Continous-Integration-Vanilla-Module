@@ -6,6 +6,7 @@
 * [Javascript](#javascript)
 * [CSS](#css)
 * [PHP Unit](#phpunit)
+* [Composer](#composer)
 * [Continous integration](#continousintegration)
 
 ### Best practices
@@ -43,6 +44,12 @@ Or you can include it in your project by adding the following to your composer.j
     "squizlabs/php_codesniffer","1.*",
 
 #####Codesniffer is easy to configure and easy to set up against a specific code standard  
+
+######<a name="composer"></a>Composer
+Run this in your terminal to get the latest Composer version:
+
+    curl -sS https://getcomposer.org/installer | php
+
 
 ######<a name="zf"></a>Zend Framework 2
 Our main framework is Zend Framework 2. It's a solid and well maintained framework with a proven track record.  
