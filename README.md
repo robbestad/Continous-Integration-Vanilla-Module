@@ -1,6 +1,8 @@
 # Vanilla Enterprise Module
 
 * [Get Started](#getstarted)
+* [Code Sniffer](#codesniffer)
+* [Zend Framework 2](#zf)
 * [Javascript](#javascript)
 * [CSS](#css)
 * [PHP Unit](#phpunit)
@@ -19,30 +21,37 @@ To see the best alot of good practises for php development, We recommand http://
 
 We could say that the only thing you need to install is composer and php, 
 and then we could download all the dependencies via composer. But to keep the repository to a minimum, 
-we also expect that the system has installed phing. 
+we also expect that the system has installed phing. To run all the tests in the provided _build.xml_ you also need *sass*, *csslint* and *jshint*.
 
-#Kodestandard
-###Det beste ved standarder, er at du har så mange å velge blant...
+#Choosing a standard
+###The nice thing about standards is that there are so many of them
 
-Mellomrom, indentering og klammeposisjon betyr ingenting for datamaskinene , men når det får programmerere til å miste arbeidsflyt, kan det bety veldig mye. 
+Spaces, indentations and bracket positions is meaningless in and of itself, but when it causes programmers to loose workflow, it can mean a great deal. 
 
-Det å ha en kodestandard innebærer at alle som jobber med vår kode vet hvordan koden skal struktureres. Det gjør den leselig for alle, og det øker arbeidsflyten.
+Following a code standard means that everyone who works with our code know how to it should be structured. This makes it easier for everyone to read, and this increases the work flow. 
 
-Kodesnifferen vi har valgt til dette formålet er PHP CodeSniffer. Det er tilgjengelig via Pear her: http://pear.php.net/package/PHP_CodeSniffer/, men er også tilgjengelig som en Composer-modul, og kan derfor lett tas ned i et prosjekt ved å legge inn følgende i composer.json:
+###<a name="codesniffer"></a>Code Sniffer
+Using a code sniffer is the first step in our automatic code review control. We're using PHP Codesniffer.
+
+You can install it here: 
+
+    http://pear.php.net/package/PHP_CodeSniffer/
+
+Or you can include it in your project by adding the following to your composer.json:
 
     "soldotno/sol_codestandards","dev-master",
     "squizlabs/php_codesniffer","1.*",
 
-#####Codesniffer enkel å konfigurere og det er mulig å bruke den mot spesifikke kodestandarder.  
+#####Codesniffer is easy to configure and easy to set up against a specific code standard  
 
-######Zend######
-Vi har valgt en standard som ligger nær opp til Zend-standarden. Det er en god ide å ta utgangspunkt i en eksisterende standard, for det gjør det enklere når man får nye øyne inn i kodebasen, samtidig som det gir en viss trygghet at valgene som er gjort er forankret i den vide verden.
+######<a name="zf"></a>Zend Framework 2
+Our main framework is Zend Framework 2. It's a solid and well maintained framework with a proven track record.  
 
 #######<a name="javascript"></a>Javascript
-For validering av Javascript har vi tatt i bruk JSHint (http://www.jshint.com/). Det kan installeres via node (_npm install -g jshint_) og kjøres ved å skrive 'jshint js/' (som i dette eksempelet validerer alle filer i javascript-katalogen).
+For Javascript validation, we're using JSHint (http://www.jshint.com/). You can install it system wide via node (_npm install -g jshint_), which creates an executable that can be run by executing 'jshint js/' (which will validate every file in the js/ folder).
 
 ######<a name="css"></a>CSS
-For CSS-validering har vi tatt i bruk CSS Lint. Det installeres også via node (npm install -g csslint), og brukes på samme måte som JSHint.
+For CSS validation we're using CSSLint. You install is system wide via node (_npm install -g csslint_) which creates an executable that can be run by executing 'csslint css/' (which will validate every file in the css/ folder).
 
 ######<a name="phpunit"></a>PHP unit
 Can be installed system wide like this (OSX)
