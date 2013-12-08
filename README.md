@@ -69,6 +69,8 @@ Installed with Node:
 
 or downloaded from http://qunitjs.com/.
 
+More information: <a href="http://api.qunitjs.com/">API Documentation</a>, <a href="http://qunitjs.com/cookbook">Cookbook</a>
+
 ######<a name="phpunit"></a>PHP unit
 Can be installed system wide like this (OSX)
 
