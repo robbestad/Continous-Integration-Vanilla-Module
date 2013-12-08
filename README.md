@@ -6,6 +6,7 @@
 * [Javascript](#javascript)
 * [CSS](#css)
 * [PHP Unit](#phpunit)
+* [QUnit](#quint)
 * [Composer](#composer)
 * [Continous integration](#continousintegration)
 
@@ -59,6 +60,14 @@ For Javascript validation, we're using JSHint (http://www.jshint.com/). You can 
 
 ######<a name="css"></a>CSS
 For CSS validation we're using CSSLint. You install is system wide via node (_npm install -g csslint_) which creates an executable that can be run by executing 'csslint css/' (which will validate every file in the css/ folder).
+
+
+######<a name="quint"></a>QUnit
+Installed with Node: 
+
+    npm install -g qunitjs
+
+or downloaded from http://qunitjs.com/.
 
 ######<a name="phpunit"></a>PHP unit
 Can be installed system wide like this (OSX)
