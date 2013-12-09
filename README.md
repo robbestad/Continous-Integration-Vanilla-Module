@@ -92,7 +92,7 @@ or be installed system wide.
 You configure phing with a *build.xml* file. A sample _build.xml_ is included in this repo.
 
 #<a name="getstarted"></a>Get Started
-Rename the folder called _./mal_ to your module name
+Rename the folder called _./module_ with your desired module name
 
 Delete the .git folder and re-initalize with your new git repo
 
