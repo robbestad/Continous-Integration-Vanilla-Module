@@ -65,7 +65,7 @@
               passthru="true" />
 
         <echo msg="Running PHPunit (phpunit)" />
-        <exec command="php vendor/phpunit/phpunit/phpunit.php --testdox --colors --log-json ${tests.reports.dir.resolved}/report.json ."
+        <exec command="php ../../../vendor/phpunit/phpunit/phpunit.php --testdox --colors --log-json ${tests.reports.dir.resolved}/report.json ."
           dir="./module/HelloWorld/tests"
               checkreturn="true"
               passthru="true" />
