@@ -86,7 +86,7 @@
     <target name="jenkins" depends="configure">
 
         <echo msg="Running PHPunit (phpunit)" />
-        <exec command="phpunit ."
+        <exec command="/usr/local/bin/phpunit ."
           dir="./module/HelloWorld/tests"
               checkreturn="true"
               passthru="true" />
