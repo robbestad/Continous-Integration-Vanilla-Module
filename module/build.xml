@@ -53,7 +53,7 @@
               passthru="true" />
 
         <echo msg="Deploying CSS"/>
-        <exec command="sass sass/style.scss > public/css/style.css"
+        <exec command="usr/bin/sass sass/style.scss > public/css/style.css"
               dir="./"
               checkreturn="false"
               passthru="true" />
