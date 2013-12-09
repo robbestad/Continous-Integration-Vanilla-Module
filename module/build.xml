@@ -59,7 +59,7 @@
               passthru="true" />
 
         <echo msg="Validating CSS"/>
-        <exec command="/usr/bin/csslint --quiet public/css"
+        <exec command="csslint --quiet public/css"
               dir="./"
               checkreturn="true"
               passthru="true" />
