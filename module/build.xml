@@ -40,7 +40,7 @@
     <!-- ============================================  -->
     <!-- Target: prepare                               -->
     <!-- ============================================  -->
-    <target name="prepare" depends="configure">
+    <target name="lint" depends="configure">
         <echo msg="Run codesniff fixer" />
         <exec command="php ./build/php-cs-fixer.phar fix ./module/" 
               dir="."
@@ -76,10 +76,21 @@
     <!-- ============================================  -->
     <!-- Target: build                                 -->
     <!-- ============================================  -->
-    <target name="build" depends="prepare">
+    <target name="build" depends="lint">
         <echo msg="Successful :)" />    
     </target>
 
+    <!-- ============================================  -->
+    <!-- Target: jenkins                               -->
+    <!-- ============================================  -->
+    <target name="jenkins" depends="configure">
+
+        <echo msg="Running PHPunit (phpunit)" />
+        <exec command="php ../../../vendor/phpunit/phpunit/phpunit.php --testdox --colors --log-json ${tests.reports.dir.resolved}/report.json ."
+          dir="./module/HelloWorld/tests"
+              checkreturn="true"
+              passthru="true" />
+    </target>
 
     <!-- ============================================  -->
     <!-- Target: dist                                  -->
