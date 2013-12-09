@@ -53,13 +53,13 @@
               passthru="true" />
 
         <echo msg="Deploying CSS"/>
-        <exec command="usr/bin/sass sass/style.scss > public/css/style.css"
+        <exec command="/usr/bin/sass sass/style.scss > public/css/style.css"
               dir="./"
               checkreturn="false"
               passthru="true" />
 
         <echo msg="Validating CSS"/>
-        <exec command="csslint --quiet public/css"
+        <exec command="/usr/bin/csslint --quiet public/css"
               dir="./"
               checkreturn="true"
               passthru="true" />
