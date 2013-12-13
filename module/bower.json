@@ -7,18 +7,23 @@
   "description": "How to sniff and continously integrate every bit of code you write. The missing manual.",
   "main": "README.md",
   "keywords": [
-    "ci",
-    "codesniff",
-    "javascript",
-    "css"
+    "ci"
   ],
   "license": "CC",
-  "homepage": "http://www.svenardo.com",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ]
+    "tests",
+    "public/vendor"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "latest",
+    "modernizr": "latest",
+    "moment": "latest",
+    "angular": "~1.2",
+    "angular-route": "~1.2"
+  }
 }
