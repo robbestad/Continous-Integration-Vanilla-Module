@@ -1,12 +1,12 @@
 {
-    "name": "soldotno/VanillaEnterpriseModule",
+    "name": "soldotno/vanilla-enterprise-module",
     "description": "Vanilla Enterprise Module",
     "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
         "vanilla module"
     ],
-    "homepage": "https://github.com/soldotno/VanillaEnterpriseModule",
+    "homepage": "https://github.com/soldotno/vanilla-enterprise-module",
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3"
